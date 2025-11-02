@@ -1,2 +1,34 @@
-# Image_Classification_Week1
-This project builds an image classification model using Convolutional Neural Networks (CNNs) to automatically identify and categorize images into predefined classes. The CNN learns spatial hierarchies of features through convolution, pooling, and activation layers to recognize patterns, textures, and objects accurately.
+This project aims to classify the images in the given dataset as cats or dogs using convolutional neural networks(CNN)
+
+Approach and pipeline:
+Refer to the report and code for the approach and implementation.
+
+Results:
+Results after training 18,000 images of cats and dogs:
+
+number of epochs = 15
+training data / validation data split = 80/20
+MODEL
+CONV 3x3 filter layers with batch norm - 32 x 64 x 96 x 96 x 64
+Dense layers with drop out of 0.2 and 0.3 - 256 x 128 x 2
+loss: 0.0638
+accuracy: 0.9759
+val_loss: 0.3255
+val_accuracy: 0.9044
+The model was tested on the images in the test1 folder. The performance of the model was very good and was able to predict the animals with 97-99% accuracy.
+
+Plots for model accuracy and loss are following:
+![accuracy_5000images_15epochs.png](Output%2Faccuracy_5000images_15epochs.png)
+![accuracy_18000images_15epochs.png](Output%2Faccuracy_18000images_15epochs.png)
+![loss_5000images_15epochs.png](Output%2Floss_5000images_15epochs.png)
+![loss_18000images_15epochs.png](Output%2Floss_18000images_15epochs.png)
+Classifying the images:
+![cat_prediction1.png](Output%2Fcat_prediction1.png)
+![cat_prediction2.png](Output%2Fcat_prediction2.png)
+![![dog_prediction2.png](Output%2Fdog_prediction2.png)
+![dog_prediction2.png](Output%2Fdog_prediction2.png)
+
+Instructions to run the code:
+Go to directory: cd Code/
+To start the training run:
+$ python main.py
