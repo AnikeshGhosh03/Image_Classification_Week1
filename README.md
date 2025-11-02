@@ -1,3 +1,5 @@
+Image Classification Using CNN
+
 This project aims to classify the images in the given dataset as cats or dogs using convolutional neural networks(CNN)
 
 Approach and pipeline:
@@ -25,10 +27,13 @@ Plots for model accuracy and loss are following:
 Classifying the images:
 ![cat_prediction1.png](Output%2Fcat_prediction1.png)
 ![cat_prediction2.png](Output%2Fcat_prediction2.png)
-![![dog_prediction2.png](Output%2Fdog_prediction2.png)
+![dog_prediction2.png](Output%2Fdog_prediction2.png)
 ![dog_prediction2.png](Output%2Fdog_prediction2.png)
 
 Instructions to run the code:
+
 Go to directory: cd Code/
+
 To start the training run:
+
 $ python main.py
